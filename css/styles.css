@@ -26,6 +26,11 @@ body {
   color: var(--accent-color);
 }
 
+/* Main-nav */
+
+.main-nav {
+  display: flex;
+}
 /* Logo */
 
 .logo {
@@ -84,6 +89,15 @@ body {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.contacts {
+
+  display: flex;
+  
+}
+.contacts :not(last child) {
+  margin-right: 50px;
 }
 
 .contacts .link {
