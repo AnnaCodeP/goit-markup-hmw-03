@@ -49,7 +49,30 @@ body {
 
 /* Site nav */
 
+.site-nav {
+
+  display: flex;
+}
+
+.site-nav .item {
+  /* outline: 1px solid red;
+  */
+} 
+
+.site-nav .item+ .item {
+
+  margin-left: 50px;
+}
+
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
   color: var(--title-text-color);
   font-family: Roboto;
   font-style: normal;
@@ -59,6 +82,7 @@ body {
   letter-spacing: 0.02em;
   text-align: left;
   text-decoration: none;
+  
 
 }
 
