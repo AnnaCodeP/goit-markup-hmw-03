@@ -16,10 +16,8 @@ body {
 }
 
 .page-header {
-  width: 1600px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
+  display: flex;
+  color: var(--title-color);
 }
 .page-header .link:hover,
 .page-header .link:focus {
