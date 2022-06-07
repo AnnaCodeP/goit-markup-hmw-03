@@ -26,10 +26,11 @@ body {
   color: var(--accent-color);
 }
 
-/* Main-nav */
+/* Main nav */
 
 .main-nav {
   display: flex;
+  align-items: center;
 }
 /* Logo */
 
