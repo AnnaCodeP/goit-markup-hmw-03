@@ -135,7 +135,7 @@ body {
   margin-left: auto;
   
 }
-.link :not(last child) {
+.contacts-item :not(last child) {
   margin-right: 50px;
 }
 
