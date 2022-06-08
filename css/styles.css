@@ -7,12 +7,41 @@
   --hero-color: #2f303a;
   --team-color: #f5f4fa;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+a::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--title-color);
   letter-spacing: 0.03em;
   font-size: 14px;
+}
+/* Утилиты */
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .page-header {
@@ -40,6 +69,9 @@ body {
 /* Logo */
 
 .logo {
+  display: flex;
+  margin-right: 93;
+  align-items: center;
   color: var(--accent-color);
   font-family: Raleway;
   font-style: normal;
@@ -58,6 +90,7 @@ body {
 
 .site-nav {
   display: flex;
+  margin-left: auto;
 }
 
 .site-nav .item {
@@ -98,8 +131,8 @@ body {
 }
 
 .contacts {
-
   display: flex;
+  margin-left: auto;
   
 }
 .contacts :not(last child) {
@@ -107,6 +140,8 @@ body {
 }
 
 .contacts .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--contacts-color);
   text-decoration: none;
   font-weight: 500;
@@ -117,24 +152,26 @@ body {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
-}
-
 /* Hero section */
 .hero {
   background-color: var(--hero-color);
   margin: 0 auto;
+  text-align: center;
 }
 
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   color: var(--title-color);
   font-style: 400;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   text-align: center;
+  width: 696px;
 }
 .button {
   color: var(--title-color);
@@ -146,13 +183,25 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
+  border-radius: 4px;
   box-shadow: 0px 4px 4px 0px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
 }
+
 .button:hover,
 .button:focus {
   background-color: #188ce8;
 }
 /* Features */
+
+.feature-list {
+
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .feature-list .title {
   color: var(--title-text-color);
@@ -169,6 +218,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
+}
+.feature-list .item {
+   width: 270px;
+
 }
 
 /* Job section */
@@ -274,6 +327,7 @@ body {
   color: var(--title-color);
 }
 
+
 .portfolio-section-title {
   font-size: 18px;
   font-weight: 700;
@@ -281,7 +335,23 @@ body {
   letter-spacing: 0.06em;
   text-align: left;
 }
+.test-container {
 
+  
+}
+
+.flex-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-element {
+  display: flex;
+  flex-wrap: wrap;
+
+}
 .link {
   text-decoration: none;
 }
