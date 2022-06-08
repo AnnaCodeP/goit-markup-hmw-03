@@ -70,7 +70,7 @@ body {
 
 .logo {
   display: flex;
-  margin-right: 93;
+  margin-right: 93px;
   align-items: center;
   color: var(--accent-color);
   font-family: Raleway;
@@ -135,7 +135,7 @@ body {
   margin-left: auto;
   
 }
-.contacts :not(last child) {
+.link :not(last child) {
   margin-right: 50px;
 }
 
@@ -337,7 +337,7 @@ body {
 }
 .test-container {
 
-  
+
 }
 
 .flex-container {
