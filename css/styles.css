@@ -144,6 +144,7 @@ body {
 }
 
 .contacts .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--contacts-color);
@@ -264,6 +265,10 @@ margin: -1px;
 
 /* Job section */
 
+.work-section {
+padding-top: 0;
+}
+
 .section-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -327,6 +332,7 @@ margin: -1px;
 }
 .team-text {
   text-align: center;
+  background-color: var(--title-color);
   padding-top: 30px;
   padding-bottom: 30px;
   border-right: 1px solid #eeeeee;
@@ -342,7 +348,7 @@ margin: -1px;
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 0.03em;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .profession {
@@ -507,6 +513,7 @@ margin: -1px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
+  margin-bottom: 4px;
 }
 
 .contacts-link:hover,
